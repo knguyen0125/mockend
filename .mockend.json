@@ -2,6 +2,12 @@
   "Booking": {
     "title": { "string": {} },
     "from": { "dateTime": { "min": "2010-01-01T00:00:00Z", "max": "2050-12-31T23:59:59Z" } },
-    "bookingDuration": { "int": { "min": 1, "max": 180 } }
+    "bookingDuration": { "int": { "min": 1, "max": 180 } },
+    "listing": {
+      "belongsTo": "Listing"
+    }
+  },
+  "Listing": {
+    "title": { "string" : {} }
   }
 }
